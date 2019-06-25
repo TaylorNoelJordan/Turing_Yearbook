@@ -17,9 +17,10 @@ class App extends Component {
       <div className="App">
       <header className="App-header">
       <h1>Turing Yearbook</h1>
-      <h2>Staff</h2>
       </header>
+      <h2>Staff</h2>
        <Cohort />
+      {/* <h2>Students</h2> */}
       </div>
     );
   }
