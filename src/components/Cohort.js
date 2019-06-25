@@ -5,29 +5,28 @@ import './Cohort.css';
 
 // COHORT COMPONENT CODE GOES HERE
 
-const staffMembers = people.staff;
-const students = people.students;
+// const staffMembers = people.staff;
+// const students = people.students;
 
-const staffCards = staffMembers.map(staffMember =>
-    <Person photo={staffMember.photo}
-    name={staffMember.name}
-    quote={staffMember.quote}
-    superlative={staffMember.superlative}/>
-    )
+// const staffCards = staffMembers.map(staffMember =>
+//     <Person photo={staffMember.photo}
+//     name={staffMember.name}
+//     quote={staffMember.quote}
+//     superlative={staffMember.superlative}/>
+//     )
 
-const studentCards = students.map(student =>
-    <Person photo={student.photo}
-     name={student.name}
-     quote={student.quote}
-     superlative={student.superlative} />)
+// const studentCards = students.map(student =>
+//     <Person photo={student.photo}
+//      name={student.name}
+//      quote={student.quote}
+//      superlative={student.superlative} />)
 
 
 
-const Cohort = () => {
+const Cohort = (props) => {
     return (
         <div className='card-container'>
-        {staffCards}
-        {studentCards}
+            {props.team}
         </div>
     )
 }
