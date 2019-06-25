@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Cohort from './Cohort';
 import Person from './Person';
+import Form from './Form';
 import people from '../data/yearbook-data.js';
 import './App.css';
 
@@ -10,17 +11,12 @@ const staffMembers = people.staff;
 const students = people.students;
 
 const staffCards = staffMembers.map(staffMember =>
-    <Person photo={staffMember.photo}
-    name={staffMember.name}
-    quote={staffMember.quote}
-    superlative={staffMember.superlative}/>
+    <Person photo={staffMember.photo} name={staffMember.name} quote={staffMember.quote} superlative={staffMember.superlative}/>
     )
 
 const studentCards = students.map(student =>
-    <Person photo={student.photo}
-     name={student.name}
-     quote={student.quote}
-     superlative={student.superlative} />)
+    <Person photo={student.photo} name={student.name} quote={student.quote} superlative={student.superlative} />
+    )
 
 
 
@@ -43,6 +39,7 @@ class App extends Component {
       <Cohort team={staffCards}/>
       <h2>Students</h2>
       <Cohort team={studentCards} />
+      <Form />
       </div>
     );
   }

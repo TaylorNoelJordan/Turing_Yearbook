@@ -1,9 +1,24 @@
 import React from 'react';
-import Person from './Person';
-import people from '../data/yearbook-data.js';
 import './Cohort.css';
 
-// COHORT COMPONENT CODE GOES HERE
+
+const Cohort = (props) => {
+    return (
+        <div className='card-container'>
+            {props.team}
+        </div>
+    )
+}
+
+
+
+export default Cohort;
+
+
+
+
+
+
 
 // const staffMembers = people.staff;
 // const students = people.students;
@@ -20,17 +35,3 @@ import './Cohort.css';
 //      name={student.name}
 //      quote={student.quote}
 //      superlative={student.superlative} />)
-
-
-
-const Cohort = (props) => {
-    return (
-        <div className='card-container'>
-            {props.team}
-        </div>
-    )
-}
-
-
-
-export default Cohort;
