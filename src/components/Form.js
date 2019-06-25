@@ -1,8 +1,9 @@
 import React from 'react';
+import './Form.css'
 
 const Form = () => {
     return (
-        <div>
+        <div className='form-container'>
             <form>
                 <label for='name'>Name</label>
                 <input type='text' placeholder='Enter Student Name' id='name'/>
