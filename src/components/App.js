@@ -3,6 +3,7 @@ import Cohort from './Cohort';
 import people from '../data/yearbook-data.js';
 import './App.css';
 
+
 class App extends Component {
   constructor() {
     super();
@@ -18,8 +19,7 @@ class App extends Component {
       <h1>Turing Yearbook</h1>
       <h2>Staff</h2>
       </header>
-      <Cohort />
-        YOUR CODE GOES HERE
+       <Cohort />
       </div>
     );
   }
