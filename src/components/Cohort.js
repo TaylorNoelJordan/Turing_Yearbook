@@ -1,12 +1,38 @@
 import React from 'react';
 import './Cohort.css';
+import Person from './Person';
 
 
-const Cohort = (props) => {
+const Cohort = ({staff, students}) => {
+    const staffCards = staff.map(staffMember =>{
+       return ( 
+       <Person 
+            key={staffMember.id} 
+            photo={staffMember.photo} 
+            name={staffMember.name} 
+            quote={staffMember.quote} 
+            superlative={staffMember.superlative}
+       />
+       )
+    })
+
+    const studentCards = students.map(student => {
+        return (
+            <Person 
+                key={student.id} 
+                photo={student.photo} 
+                name={student.name} 
+                quote={student.quote} 
+                superlative={student.superlative} 
+                />
+        )
+    })
+
     return (
-        <div className='card-container'>
-            {props.team}
-        </div>
+        <main className='card-container'>
+           {staffCards}
+           {studentCards}
+        </main>
     )
 }
 

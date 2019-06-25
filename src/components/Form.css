@@ -11,24 +11,36 @@ form {
     align-items: center;
     display: flex;
     flex-direction: column;
+    padding: 20px;
 }
 
 input {
+    border-radius: 5px;
+    font-size: 16px;
+    height: 35px;
     width: 75%;
 }
 
 label {
+    align-self: flex-start;
     color:  #FF6347;
+    font-size: 18px;
     font-weight: bold;
+    margin:5px 0 5px 80px;
 }
 
-#submit-btn {
+.submitBtn {
+    border-radius: 20px;
     font-size: 30px;
-    height: 80px;
+    margin-top: 10px;
     width: 50%;
 }
 
-#submit-btn:hover {
+.submitBtn:hover {
     background-color:  #FF6347;
     font-weight: bold;
+}
+
+.form-title {
+    margin-top: 20px;
 }
