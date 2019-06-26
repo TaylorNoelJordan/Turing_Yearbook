@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Cohort from './Cohort';
 import Form from './Form';
 import people from '../data/yearbook-data.js';
@@ -11,26 +12,54 @@ class App extends Component {
     super();
     this.state = {
       staff: people.staff,
-      students: people.students
+      students: people.students,
+      isHidden: true
+      // isClicked: false
     }
   }
 
   addStudent = (newStudent) => {
     this.setState({ students: [...this.state.students, newStudent] })
   }
+
+  toggleForm = () => {
+    this.setState({ isHidden: !this.state.isHidden})
+  }
+
+  // toggleView = () => {
+  //   this.setState({isClicked : !this.state.isClicked});
+  // }
   
   render() {
+    const Staff = () => (
+      <div>
+        <h2>Staff</h2>
+        <Cohort data={this.state.staff} />
+      </div>
+    );
+    
+   const Students = () => (
+      <div>
+        <h2>Students</h2>
+        <Cohort data={this.state.students} />
+      </div>
+    );
  
     return (
       <div className="App">
       <header className="App-header">
       <h1>Turing Yearbook</h1>
       </header>
-      <h2>Staff</h2>
-      <Cohort 
-        staff={this.state.staff}
-        students={this.state.students} />
-      <Form addStudent={this.addStudent} />
+      <div>
+      <button className='form-toggleBtn' onClick={this.toggleForm}>Add New Student</button>
+      {!this.state.isHidden && <Form addStudent={this.addStudent} />}
+      </div>
+      <Router>
+        <Link to="/staff" className="togglePerson"><span className='staff-vew'>Staff</span></Link> | 
+        <Link to="/students"><span className='student-view'>Students</span></Link>
+        <Route path="/staff" component={Staff} />
+        <Route path="/students" component={Students} />
+      </Router>
       </div>
     );
   }

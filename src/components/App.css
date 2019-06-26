@@ -35,3 +35,13 @@ h2 {
 h2 {
   color: #6c9bed
 }
+
+.staff-view,
+.student-view {
+  display: inline-block;
+}
+
+.staff-view:hover,
+.student-view:hover {
+  color: limegreen;
+}

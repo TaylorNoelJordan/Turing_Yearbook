@@ -9,6 +9,7 @@
 
 form {
     align-items: center;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -29,14 +30,20 @@ label {
     margin:5px 0 5px 80px;
 }
 
-.submitBtn {
+.submitBtn,
+.form-toggleBtn {
     border-radius: 20px;
     font-size: 30px;
     margin-top: 10px;
     width: 50%;
 }
 
-.submitBtn:hover {
+.form-toggleBtn {
+    width: 35%;
+}
+
+.submitBtn:hover,
+.form-toggleBtn:hover {
     background-color:  #FF6347;
     font-weight: bold;
 }
