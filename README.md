@@ -1,49 +1,28 @@
 # Turing Yearbook
 
-This application was built with `create-react-app`.
+This application was built with `create-react-app`. The user can add new students to the page, and hide/show the form to do so, and view students and staff on different pages via Router implementation. This projects is a great introductory to using and understaning React principles.
 
 ### Set Up
 
-Clone down this repo.
+1. Clone down this repo.
+2. CD into the directory and run `npm install` in your terminal.
+3. Run `npm start` to start up the React server and see the code in action.
 
-Because you don't want to be pushing your updates to this boilerplate repository, we're going to have to do a few things to get set up with your own repository.
+### Screenshots
 
-1. On GitHub, create a new, empty repository and name it something like 'turing-yearbook'.
-2. Update the current remote (called "origin") so that it points at the URL of the repository you just created on GitHub. Read how to do this [here](https://help.github.com/en/articles/changing-a-remotes-url).
-3. Once you've updated the remote, you should run `npm install`, commit, and then push your initial commit to your personal repository. You will need to use the `-u` flag when you push (like this: `git push -u origin master`).
-4. Run `npm start` to start up your React server. (You will see errors!)
+The app can look something like this:
 
-### Expectations / Rules
+![staff view](<img width="1423" alt="Screen Shot 2019-06-28 at 9 01 52 AM" src="https://user-images.githubusercontent.com/47507801/60352042-455d8380-9984-11e9-8957-cff82c71da8c.png">)
 
-Build a React App that displays Turing front-end staff!
+![student view](<img width="1429" alt="Screen Shot 2019-06-28 at 9 02 02 AM" src="https://user-images.githubusercontent.com/47507801/60352051-48587400-9984-11e9-82f0-6b670cdf8459.png">)
 
-![turing yearbook screenshot](https://raw.githubusercontent.com/turingschool-examples/yearbook/master/screenshot.png)
+![add student form](<img width="1430" alt="Screen Shot 2019-06-28 at 9 02 15 AM" src="https://user-images.githubusercontent.com/47507801/60352056-4abace00-9984-11e9-9cee-145d66514ded.png">)
 
-We want to see good commit habits - atomic commits that log small, focused changesets.
+### Future Iterations
+1. Include search option for students or staff.
+1. Add option to add a staff member through the form.
+1. Have a "View All" option.
 
+Enjoy!
 
-### Iteration 0
-
-Get set up (per the instructions above)!
-
-We've provided a boilerplate for you to work with. Look through the file structure to get a sense of the app.
-
-Notice that we have multiple stylesheets - one for each component. You are welcome to style this application however you'd like. We got you started with a little styling, but feel free to get creative. (Remember, though - most of your energy should be spent on learning React, not styling.)
-
-### Iteration 1
-
-Create a Cohort component, which will act as a container that renders each of our Person cards. For now, the Cohort being displayed will be "Staff". Figure out how to pass information from `App.js` to `Cohort.js`!
-
-### Iteration 2
-
-Create a Person component. Each Person card will display: the image, the name, the quote, and the superlative (see the screenshot above for an idea).
-
-In your Cohort component, create Person cards that have the information each needs to display properly.
-
-### Iteration 3 (extension - do not attempt until iterations 0 - 2 are completed)
-
-In the `yearbook-data.js` file, un-comment-out the "students" information. Get that information displaying, too. How can you reuse components?
-
-### Iteration 4 (extension - do not attempt until iterations 0 - 3 are completed)
-
-Create a controlled component that allows people to add a new student.
+View additional projects on my [GitHub Page](https://github.com/TaylorNoelJordan?tab=repositories)
