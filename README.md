@@ -12,11 +12,11 @@ This application was built with `create-react-app`. The user can add new student
 
 The app can look something like this:
 
-![staff view](<img width="1423" alt="Screen Shot 2019-06-28 at 9 01 52 AM" src="https://user-images.githubusercontent.com/47507801/60352042-455d8380-9984-11e9-8957-cff82c71da8c.png">)
+![staff view]<img width="1423" alt="Screen Shot 2019-06-28 at 9 01 52 AM" src="https://user-images.githubusercontent.com/47507801/60352042-455d8380-9984-11e9-8957-cff82c71da8c.png">
 
-![student view](<img width="1429" alt="Screen Shot 2019-06-28 at 9 02 02 AM" src="https://user-images.githubusercontent.com/47507801/60352051-48587400-9984-11e9-82f0-6b670cdf8459.png">)
+![student view]<img width="1429" alt="Screen Shot 2019-06-28 at 9 02 02 AM" src="https://user-images.githubusercontent.com/47507801/60352051-48587400-9984-11e9-82f0-6b670cdf8459.png">
 
-![add student form](<img width="1430" alt="Screen Shot 2019-06-28 at 9 02 15 AM" src="https://user-images.githubusercontent.com/47507801/60352056-4abace00-9984-11e9-9cee-145d66514ded.png">)
+![add student form]<img width="1430" alt="Screen Shot 2019-06-28 at 9 02 15 AM" src="https://user-images.githubusercontent.com/47507801/60352056-4abace00-9984-11e9-9cee-145d66514ded.png">
 
 ### Future Iterations
 1. Include search option for students or staff.
