@@ -1,19 +1,29 @@
 import React from 'react';
-import Person from './Person';
 import './Cohort.css';
-// import people from '/data/yearbook-data'
+import Person from './Person';
 
-// COHORT COMPONENT CODE GOES HERE
 
-class Cohort extends React.Component {
-    render() {
-        return (
-            <div className='card'>
- 
-            </div>
-        )
-    }
-    
+const Cohort = ({data}) => {
+    const photoCards = data.map(person =>{
+       return ( 
+       <Person 
+            key={person.id} 
+            photo={person.photo} 
+            name={person.name} 
+            quote={person.quote} 
+            superlative={person.superlative}
+       />
+       )
+    })
+
+
+    return (
+        <main className='card-container'>
+           {photoCards}
+        </main>
+    )
 }
+
+
 
 export default Cohort;

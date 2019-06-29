@@ -19,6 +19,12 @@ body {
   text-align: center;
 }
 
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
 h1,
 h2 {
   background-color: rgba(255, 255, 255, 0.95);
@@ -28,4 +34,14 @@ h2 {
 
 h2 {
   color: #6c9bed
+}
+
+.staff-view,
+.student-view {
+  display: inline-block;
+}
+
+.staff-view:hover,
+.student-view:hover {
+  color: limegreen;
 }

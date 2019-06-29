@@ -1,0 +1,44 @@
+.person-card {
+    align-items: center;
+    background: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: space-around;
+    margin: 15px;
+    opacity: 0.9;
+    width: 330px; 
+}
+
+.yearbook-photo,
+.student-photo {
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.yearbook-photo {
+    height: 260px;
+    width: 240px;
+}
+
+.student-photo {
+    height: 300px;
+    width: 200px;
+}
+
+.person-name {
+    color: #FF6347;
+    margin: 0;
+}
+
+.person-quote {
+    font-size: 0.9em;
+    font-style: italic;
+    margin: 0 auto;
+}
+
+.superlative {
+    color: #6495EC;
+    font-size: 1em;
+}

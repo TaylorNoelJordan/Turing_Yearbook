@@ -1,0 +1,53 @@
+.form-container {
+    background: #ffffff;
+    border-radius: 10px;
+    height: auto;
+    margin: auto;
+    opacity: 0.9;
+    width: 700px;
+}
+
+form {
+    align-items: center;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+input {
+    border-radius: 5px;
+    font-size: 16px;
+    height: 35px;
+    width: 75%;
+}
+
+label {
+    align-self: flex-start;
+    color:  #FF6347;
+    font-size: 18px;
+    font-weight: bold;
+    margin:5px 0 5px 80px;
+}
+
+.submitBtn,
+.form-toggleBtn {
+    border-radius: 20px;
+    font-size: 30px;
+    margin-top: 10px;
+    width: 50%;
+}
+
+.form-toggleBtn {
+    width: 35%;
+}
+
+.submitBtn:hover,
+.form-toggleBtn:hover {
+    background-color:  #FF6347;
+    font-weight: bold;
+}
+
+.form-title {
+    margin-top: 20px;
+}
