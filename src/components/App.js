@@ -14,7 +14,6 @@ class App extends Component {
       staff: people.staff,
       students: people.students,
       isHidden: true
-      // isClicked: false
     }
   }
 
@@ -25,10 +24,6 @@ class App extends Component {
   toggleForm = () => {
     this.setState({ isHidden: !this.state.isHidden})
   }
-
-  // toggleView = () => {
-  //   this.setState({isClicked : !this.state.isClicked});
-  // }
   
   render() {
     const Staff = () => (
@@ -51,7 +46,7 @@ class App extends Component {
       <h1>Turing Yearbook</h1>
       </header>
       <div>
-      <button className='form-toggleBtn' onClick={this.toggleForm}>Add New Student</button>
+      <button className='form-toggleBtn' onClick={this.toggleForm}>{this.state.isHidden ? 'Add New Student' : 'Collapse'}</button>
       {!this.state.isHidden && <Form addStudent={this.addStudent} />}
       </div>
       <Router>
